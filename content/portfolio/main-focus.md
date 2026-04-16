@@ -31,14 +31,8 @@ Muchas apps de productividad se vuelven demasiado pesadas. `Main Focus` apuesta 
 
 ## Pantallas
 
-### Vista principal
-
-![Pantalla principal de Main Focus](/img/screenshots/main-screen.jpg)
-
-### Widget pendiente
-
-![Widget con el main focus pendiente](/img/screenshots/widget-pending.jpg)
-
-### Widget completado
-
-![Widget felicitando al completar el main focus](/img/screenshots/widget-acomplished.jpg)
+{{< project-carousel
+  images="{/img/screenshots/main-screen.jpg,/img/screenshots/widget-pending.jpg,/img/screenshots/widget-acomplished.jpg}"
+  captions="{Vista principal de la app|Widget con el objetivo pendiente|Widget de celebracion al completar todo}"
+  interval="3200"
+>}}

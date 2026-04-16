@@ -1,0 +1,82 @@
+{{ $id := delimit (slice "project-carousel" (partial "functions/uid.html" .) (now.UnixNano)) "-" }}
+{{ $imagesParam := .Get "images" }}
+{{ $captionsParam := .Get "captions" }}
+{{ $interval := .Get "interval" | default "3500" }}
+
+{{ $imagesClean := strings.TrimPrefix "{" $imagesParam }}
+{{ $imagesClean = strings.TrimSuffix "}" $imagesClean }}
+{{ $images := strings.Split $imagesClean "," }}
+
+{{ $captionsClean := strings.TrimPrefix "{" $captionsParam }}
+{{ $captionsClean = strings.TrimSuffix "}" $captionsClean }}
+{{ $captions := strings.Split $captionsClean "|" }}
+
+<div class="project-carousel" id="{{ $id }}" data-interval="{{ $interval }}">
+  <div class="project-carousel-track">
+    {{ range $index, $image := $images }}
+      {{ $src := strings.TrimSpace $image }}
+      {{ $caption := "" }}
+      {{ if lt $index (len $captions) }}
+        {{ $caption = strings.TrimSpace (index $captions $index) }}
+      {{ end }}
+      <figure class="project-carousel-slide{{ if eq $index 0 }} is-active{{ end }}">
+        <img
+          src="{{ $src | relURL }}"
+          alt="{{ if $caption }}{{ $caption }}{{ else }}Captura {{ add $index 1 }}{{ end }}"
+          data-zoom-src="{{ $src | relURL }}">
+        {{ if $caption }}
+          <figcaption>{{ $caption }}</figcaption>
+        {{ end }}
+      </figure>
+    {{ end }}
+  </div>
+
+  <button class="project-carousel-nav is-prev" type="button" aria-label="Imagen anterior">&#8249;</button>
+  <button class="project-carousel-nav is-next" type="button" aria-label="Imagen siguiente">&#8250;</button>
+</div>
+
+<script>
+  (() => {
+    const root = document.currentScript.previousElementSibling;
+    if (!root) return;
+
+    const slides = Array.from(root.querySelectorAll('.project-carousel-slide'));
+    if (slides.length <= 1) return;
+
+    const prev = root.querySelector('.is-prev');
+    const next = root.querySelector('.is-next');
+    const interval = Number(root.dataset.interval || 3500);
+    let current = 0;
+    let timer;
+
+    const render = (index) => {
+      slides[current].classList.remove('is-active');
+      current = (index + slides.length) % slides.length;
+      slides[current].classList.add('is-active');
+    };
+
+    const start = () => {
+      timer = window.setInterval(() => render(current + 1), interval);
+    };
+
+    const reset = () => {
+      window.clearInterval(timer);
+      start();
+    };
+
+    prev.addEventListener('click', () => {
+      render(current - 1);
+      reset();
+    });
+
+    next.addEventListener('click', () => {
+      render(current + 1);
+      reset();
+    });
+
+    root.addEventListener('mouseenter', () => window.clearInterval(timer));
+    root.addEventListener('mouseleave', start);
+
+    start();
+  })();
+</script>
