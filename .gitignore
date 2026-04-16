@@ -1,0 +1,7 @@
+.hugo_build.lock
+public/
+resources/_gen/
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db

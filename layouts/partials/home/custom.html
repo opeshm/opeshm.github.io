@@ -1,0 +1,33 @@
+<section class="home-hero not-prose relative isolate overflow-hidden rounded-[2rem] border border-white/10 px-6 py-16 shadow-2xl sm:px-10 lg:px-14 lg:py-20">
+  <div class="hero-orb hero-orb-primary" aria-hidden="true"></div>
+  <div class="hero-orb hero-orb-secondary" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+
+  <div class="relative mx-auto flex max-w-6xl flex-col gap-12 lg:flex-row lg:items-center lg:justify-between">
+    <div class="max-w-2xl text-left">
+      <p class="hero-kicker">Opes Labs</p>
+      <h1 class="hero-title">{{ .Site.Params.Author.name | default .Site.Title }}</h1>
+      {{ with .Site.Params.Author.headline }}
+        <p class="hero-subtitle">{{ . }}</p>
+      {{ end }}
+      <p class="hero-copy">
+        Un espacio para publicar aprendizajes, proyectos y notas con una identidad visual propia sobre Blowfish.
+      </p>
+      <div class="hero-actions">
+        <a class="hero-button hero-button-primary" href="/posts/">Ver posts</a>
+        <a class="hero-button hero-button-secondary" href="mailto:{{ .Site.Params.Author.email }}">Contactar</a>
+      </div>
+    </div>
+
+    <div class="hero-mark-wrap">
+      <div class="hero-mark-frame">
+        <img
+          class="hero-mark"
+          src="{{ "img/logo.svg" | relURL }}"
+          alt="Logo de {{ .Site.Params.Author.name | default .Site.Title }}"
+          width="320"
+          height="320">
+      </div>
+    </div>
+  </div>
+</section>

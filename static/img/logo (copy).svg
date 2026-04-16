@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Opes Labs logo</title>
+  <desc id="logoDesc">Logotipo abstracto con formas circulares en lila y naranja.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a0d45"/>
+      <stop offset="100%" stop-color="#12081f"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="146" fill="none" stroke="url(#ring)" stroke-width="42"/>
+  <path d="M330 164c-61-39-144-25-188 31-44 57-35 139 20 185 56 47 139 44 191-7" fill="none" stroke="#f8edff" stroke-linecap="round" stroke-width="24" opacity="0.92"/>
+  <circle cx="354" cy="168" r="34" fill="url(#spark)"/>
+  <path d="M160 360l52-52 44 44 96-96" fill="none" stroke="url(#spark)" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"/>
+  <circle cx="160" cy="360" r="18" fill="#fb923c"/>
+  <circle cx="354" cy="168" r="10" fill="#fff7ed" opacity="0.9"/>
+</svg>
