@@ -51,16 +51,6 @@ html:not(.dark) .text-neutral-400 {
   color: rgba(233, 213, 255, 0.82) !important;
 }
 
-html:not(.dark) .bg-neutral,
-html:not(.dark) .bg-neutral-50,
-html:not(.dark) .bg-neutral-100,
-html:not(.dark) .bg-neutral-100\/75,
-html:not(.dark) .bg-neutral\/25,
-html:not(.dark) .bg-neutral\/50 {
-  background-color: rgba(27, 15, 46, 0.44) !important;
-  backdrop-filter: blur(10px);
-}
-
 html:not(.dark) .border-neutral-200,
 html:not(.dark) .border-neutral-300 {
   border-color: rgba(255, 255, 255, 0.12) !important;
