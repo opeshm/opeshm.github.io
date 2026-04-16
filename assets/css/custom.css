@@ -4,6 +4,9 @@ html {
     radial-gradient(circle at top left, rgba(245, 113, 42, 0.32), transparent 34%),
     radial-gradient(circle at top right, rgba(168, 85, 247, 0.3), transparent 28%),
     linear-gradient(135deg, rgba(31, 12, 56, 0.98), rgba(59, 24, 95, 0.94) 48%, rgba(18, 12, 38, 0.98));
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 html::before {
