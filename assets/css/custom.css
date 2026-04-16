@@ -1,3 +1,83 @@
+html {
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top left, rgba(245, 113, 42, 0.32), transparent 34%),
+    radial-gradient(circle at top right, rgba(168, 85, 247, 0.3), transparent 28%),
+    linear-gradient(135deg, rgba(31, 12, 56, 0.98), rgba(59, 24, 95, 0.94) 48%, rgba(18, 12, 38, 0.98));
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 36px 36px;
+  z-index: 0;
+}
+
+body {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  background: transparent !important;
+  z-index: 1;
+}
+
+html:not(.dark) body,
+html:not(.dark) #main-content,
+html:not(.dark) main,
+html:not(.dark) footer {
+  color: rgb(245 243 255);
+}
+
+html:not(.dark) h1,
+html:not(.dark) h2,
+html:not(.dark) h3,
+html:not(.dark) h4,
+html:not(.dark) h5,
+html:not(.dark) h6,
+html:not(.dark) .text-neutral-900,
+html:not(.dark) .text-neutral-800,
+html:not(.dark) .text-neutral-700 {
+  color: rgb(255 247 237) !important;
+}
+
+html:not(.dark) .text-neutral-600,
+html:not(.dark) .text-neutral-500,
+html:not(.dark) .text-neutral-400 {
+  color: rgba(233, 213, 255, 0.82) !important;
+}
+
+html:not(.dark) .bg-neutral,
+html:not(.dark) .bg-neutral-50,
+html:not(.dark) .bg-neutral-100,
+html:not(.dark) .bg-neutral-100\/75,
+html:not(.dark) .bg-neutral\/25,
+html:not(.dark) .bg-neutral\/50 {
+  background-color: rgba(27, 15, 46, 0.44) !important;
+  backdrop-filter: blur(10px);
+}
+
+html:not(.dark) .border-neutral-200,
+html:not(.dark) .border-neutral-300 {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+html:not(.dark) a {
+  color: rgb(251 191 36);
+}
+
+html:not(.dark) a:hover {
+  color: rgb(196 181 253);
+}
+
+.fixed.inset-x-0.min-h-\[130px\].opacity-65.bg-gradient-to-b {
+  display: none;
+}
+
 .home-hero {
   background:
     radial-gradient(circle at top left, rgba(245, 113, 42, 0.32), transparent 34%),
