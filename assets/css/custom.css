@@ -24,6 +24,42 @@ body {
   min-height: 100vh;
   background: transparent !important;
   z-index: 1;
+  color: rgb(237 240 245);
+}
+
+body,
+.prose,
+.prose p,
+.prose li,
+.prose blockquote,
+.prose strong,
+.prose code,
+.prose td,
+.prose th {
+  color: rgb(237 240 245);
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(255 247 237);
+}
+
+a {
+  color: rgb(251 146 60);
+}
+
+a:hover {
+  color: rgb(216 180 254);
 }
 
 html:not(.dark) body,
@@ -48,7 +84,7 @@ html:not(.dark) .text-neutral-700 {
 html:not(.dark) .text-neutral-600,
 html:not(.dark) .text-neutral-500,
 html:not(.dark) .text-neutral-400 {
-  color: rgba(233, 213, 255, 0.82) !important;
+  color: rgba(226, 232, 240, 0.82) !important;
 }
 
 html:not(.dark) .border-neutral-200,
