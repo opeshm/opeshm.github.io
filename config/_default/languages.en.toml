@@ -9,12 +9,12 @@ title = "Opes Labs"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  logo = "img/logo.svg"
+  logo = "img/tuxavatar.png"
   description = "Blog personal de Mario Dominguez."
 
 [params.author]
   name = "Mario Dominguez"
   email = "opeshm@gmail.com"
-  image = "img/logo.svg"
+  image = "img/tuxavatar.png"
   headline = "Notas, experimentos e ideas sobre software, sistemas y producto."
   bio = "Blog personal de Mario Dominguez."
