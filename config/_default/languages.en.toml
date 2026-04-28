@@ -10,11 +10,11 @@ title = "Opes Labs"
   rtl = false
   dateFormat = "2 January 2006"
   logo = "img/tuxavatar.png"
-  description = "Blog personal de Mario Dominguez."
+  description = "Mario Dominguez's personal blog."
 
 [params.author]
   name = "Mario Dominguez"
   email = "opeshm@gmail.com"
   image = "img/tuxavatar.png"
-  headline = "Notas, experimentos e ideas sobre software, sistemas y producto."
-  bio = "Blog personal de Mario Dominguez."
+  headline = "Notes, experiments, and ideas about software, systems, and product."
+  bio = "Mario Dominguez's personal blog."
