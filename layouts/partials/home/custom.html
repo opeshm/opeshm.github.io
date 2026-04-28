@@ -10,9 +10,7 @@
       {{ with .Site.Params.Author.headline }}
         <p class="hero-subtitle">{{ . }}</p>
       {{ end }}
-      <p class="hero-copy">
-        Un espacio para publicar aprendizajes, proyectos y notas.
-      </p>
+      <p class="hero-copy">{{ i18n "home.hero_copy" }}</p>
     </div>
 
     <div class="hero-mark-wrap">

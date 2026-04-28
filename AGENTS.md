@@ -18,7 +18,7 @@
 - Static image paths used by content and templates are rooted at `static/`, e.g. `/img/tuxavatar.png`.
 
 ## Content Notes
-- Content is currently Spanish even though the configured language key is `en`; preserve the existing language unless the user asks for localization changes.
+- The default site language is `es`; keep visible content in Spanish unless the user asks for localization changes.
 - Portfolio pages use TOML front matter and can opt into Blowfish cards with fields such as `featured`, `featureimage`, `cardView`, and `cardViewScreenWidth`.
 - The local `project-carousel` shortcode expects comma-separated `images="{...}"` and pipe-separated `captions="{...}"` values.
 
