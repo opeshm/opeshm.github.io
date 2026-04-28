@@ -103,6 +103,29 @@ html:not(.dark) a:hover {
   color: rgb(196 181 253);
 }
 
+html:not(.dark) #mobile-menu-toggle ~ [role="dialog"] {
+  background:
+    radial-gradient(circle at top left, rgba(245, 113, 42, 0.32), transparent 34%),
+    radial-gradient(circle at top right, rgba(168, 85, 247, 0.3), transparent 28%),
+    linear-gradient(135deg, rgba(31, 12, 56, 0.98), rgba(59, 24, 95, 0.96) 48%, rgba(18, 12, 38, 0.98)) !important;
+  color: rgb(255 247 237);
+}
+
+html:not(.dark) #mobile-menu-toggle ~ [role="dialog"] a,
+html:not(.dark) #mobile-menu-toggle ~ [role="dialog"] .text-neutral-700 {
+  color: rgb(255 247 237) !important;
+}
+
+html:not(.dark) #mobile-menu-toggle ~ [role="dialog"] a:hover {
+  color: rgb(251 191 36) !important;
+}
+
+html:not(.dark) #mobile-menu-toggle ~ [role="dialog"] label[for="mobile-menu-toggle"] {
+  background: rgba(31, 12, 56, 0.92) !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+  color: rgb(255 247 237) !important;
+}
+
 .fixed.inset-x-0.min-h-\[130px\].opacity-65.bg-gradient-to-b {
   display: none;
 }
