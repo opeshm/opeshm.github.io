@@ -349,8 +349,10 @@ html:not(.dark) #mobile-menu-toggle ~ [role="dialog"] label[for="mobile-menu-tog
   }
 
   .hero-title {
-    font-size: clamp(2.15rem, 12vw, 3.4rem);
+    max-width: 100%;
+    font-size: clamp(1.85rem, 9.5vw, 3rem);
     line-height: 1;
+    letter-spacing: -0.04em;
   }
 
   .hero-actions {
