@@ -10,7 +10,7 @@ showEdit = false
 showTaxonomies = false
 summary = "Android app with a widget to keep your main focus visible, track the roadmap, and celebrate when all tasks are complete."
 featured = true
-featureimage = "/img/screenshots/main-screen.jpg"
+featureimage = "img/main-focus/main-focus-feature-en.png"
 externalUrl = ""
 +++
 
