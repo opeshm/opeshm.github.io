@@ -349,7 +349,8 @@ html:not(.dark) #mobile-menu-toggle ~ [role="dialog"] label[for="mobile-menu-tog
   }
 
   .hero-title {
-    font-size: clamp(2.5rem, 15vw, 4rem);
+    font-size: clamp(2.15rem, 12vw, 3.4rem);
+    line-height: 1;
   }
 
   .hero-actions {
