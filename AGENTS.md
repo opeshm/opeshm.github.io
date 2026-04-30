@@ -7,8 +7,8 @@
 
 ## Commands
 - Local server: `hugo server` from the repository root.
-- Deploy-equivalent build: `hugo build --gc --minify` from the repository root.
-- GitHub Pages CI builds with Hugo Extended `0.160.0`, Dart Sass `1.99.0`, Node `24.14.1`, and checks out submodules recursively.
+- CI-style build: `hugo build --gc --minify --baseURL "https://opeshm.github.io/" --cacheDir /tmp/hugo_cache` from the repository root.
+- GitHub Pages CI builds on pushes to `master` with Hugo Extended `0.160.0`, Dart Sass `1.99.0`, Node `24.14.1`, `TZ=Europe/Madrid`, and recursive submodules.
 - There is no root `package.json`; do not run root `npm install`. Theme npm scripts and lockfiles belong to `themes/blowfish`.
 
 ## Site Customization
@@ -18,7 +18,7 @@
 - Static image paths used by content and templates are rooted at `static/`, e.g. `/img/tuxavatar.png`.
 
 ## Content Notes
-- The default site language is `es`; keep visible content in Spanish unless the user asks for localization changes.
+- The default site language is `es`; English content uses `.en.md` files and `config/_default/languages.en.toml`.
 - Portfolio pages use TOML front matter and can opt into Blowfish cards with fields such as `featured`, `featureimage`, `cardView`, and `cardViewScreenWidth`.
 - The local `project-carousel` shortcode expects comma-separated `images="{...}"` and pipe-separated `captions="{...}"` values.
 
