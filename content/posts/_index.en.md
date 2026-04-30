@@ -1,6 +1,9 @@
 +++
-title = "Posts"
-description = "Blog articles"
+title = "Articles"
+description = "Guides and technical notes"
+cardView = true
+cardViewScreenWidth = true
+groupByYear = false
 +++
 
-Blog posts will appear here.
+Practical guides and technical notes about software, systems, and product.

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub Pages and Route 53 DNS</title>
+  <desc id="desc">Abstract card showing DNS records connecting AWS Route 53 to GitHub Pages.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#21113a"/>
+      <stop offset="0.55" stop-color="#111827"/>
+      <stop offset="1" stop-color="#3b1b12"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#fb923c"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" rx="64" fill="url(#bg)"/>
+  <circle cx="980" cy="110" r="210" fill="#9333ea" opacity="0.18"/>
+  <circle cx="170" cy="690" r="260" fill="#f97316" opacity="0.14"/>
+  <path d="M174 252h852M174 400h852M174 548h852" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2"/>
+  <g filter="url(#glow)">
+    <rect x="118" y="160" width="330" height="480" rx="36" fill="#171223" stroke="#ffffff" stroke-opacity="0.12"/>
+    <rect x="752" y="160" width="330" height="480" rx="36" fill="#171223" stroke="#ffffff" stroke-opacity="0.12"/>
+    <path d="M448 400h304" stroke="url(#accent)" stroke-width="18" stroke-linecap="round"/>
+    <path d="M704 346l68 54-68 54" fill="none" stroke="url(#accent)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="158" y="238" fill="#f8edff" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800">Route 53</text>
+  <text x="792" y="238" fill="#f8edff" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800">Pages</text>
+  <g fill="none" stroke-linecap="round" stroke-width="16">
+    <path d="M190 342h206" stroke="#c084fc"/>
+    <path d="M190 402h156" stroke="#f8edff" stroke-opacity="0.75"/>
+    <path d="M190 462h216" stroke="#f8edff" stroke-opacity="0.45"/>
+    <path d="M826 342h138" stroke="#fb923c"/>
+    <path d="M826 402h206" stroke="#f8edff" stroke-opacity="0.75"/>
+    <path d="M826 462h166" stroke="#f8edff" stroke-opacity="0.45"/>
+  </g>
+  <rect x="424" y="606" width="352" height="58" rx="29" fill="#ffffff" fill-opacity="0.08"/>
+  <text x="600" y="645" fill="#fed7aa" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">A records to GitHub IPs</text>
+</svg>

@@ -1,6 +1,9 @@
 +++
-title = "Posts"
-description = "Articulos del blog"
+title = "Articulos"
+description = "Guias y notas tecnicas"
+cardView = true
+cardViewScreenWidth = true
+groupByYear = false
 +++
 
-Aqui iran apareciendo las publicaciones del blog.
+Guias practicas y notas tecnicas sobre software, sistemas y producto.
