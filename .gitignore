@@ -5,3 +5,4 @@ resources/_gen/
 # OS/editor cruft
 .DS_Store
 Thumbs.db
+local
