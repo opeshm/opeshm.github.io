@@ -42,6 +42,14 @@ body,
   color: rgb(237 240 245);
 }
 
+#main-content article .max-w-prose,
+#main-content article .max-w-fit,
+#main-content > header.max-w-prose,
+#main-content > section.prose .max-w-prose {
+  max-width: 100%;
+  width: 100%;
+}
+
 .prose h1,
 .prose h2,
 .prose h3,
