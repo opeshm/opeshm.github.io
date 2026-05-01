@@ -15,11 +15,11 @@ featured = true
 featureimage = "img/pokequest/home-desktop.png"
 +++
 
-`PokeQuest` es una web de referencia para encontrar informacion de `Pokemon Quest` sin tener que saltar entre tablas o guias dispersas.
+[PokeQuest](https://pokequest.opeshm.net) es una web de referencia para encontrar informacion de [Pokemon Quest](https://pokemonquest.pokemon.com/) sin tener que saltar entre tablas o guias dispersas.
 
 El objetivo es hacer que las recetas, los ratios de atraccion, los movimientos y la Pokedex sean rapidos de explorar desde una interfaz limpia y responsive.
 
-[Abrir PokeQuest](https://pokequest.opeshm.net/){target="_blank" rel="noopener noreferrer"}
+[Abrir PokeQuest](https://pokequest.opeshm.net/)
 
 ## Que ofrece
 
