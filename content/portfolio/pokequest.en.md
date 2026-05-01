@@ -19,6 +19,8 @@ featureimage = "img/pokequest/home-desktop.png"
 
 The goal is to make recipes, attraction rates, moves, and Pokedex data quick to explore from a clean responsive interface.
 
+[Open PokeQuest](https://pokequest.opeshm.net/){target="_blank" rel="noopener noreferrer"}
+
 ## What it offers
 
 - Recipe search with ingredients, quality, and the Pokemon each recipe can attract.
