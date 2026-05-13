@@ -1,18 +1,18 @@
 # Repository Notes
 
 ## Project Shape
-- This is a Hugo site using the Blowfish theme from the `themes/blowfish` git submodule.
-- Treat `themes/blowfish` as upstream theme code; prefer site overrides in root `config/`, `layouts/`, `assets/`, `content/`, `i18n/`, and `static/` unless intentionally updating the theme submodule.
-- Ignore root `hugo.toml` for active site settings; the real config is `config/_default/hugo.toml`, which sets `theme = "blowfish"` and `defaultContentLanguage = "es"`.
+- This is a Hugo site using Blowfish from the `themes/blowfish` git submodule; treat `themes/blowfish` as upstream and prefer root-level overrides.
+- Active site settings are in `config/_default/*.toml`; ignore root `hugo.toml`, which is stale scaffold config.
+- `config/_default/hugo.toml` sets `theme = "blowfish"` and `defaultContentLanguage = "es"`.
 
 ## Commands
 - Local server: `hugo server` from the repo root.
-- CI-style build: `hugo build --gc --minify --baseURL "https://opeshm.github.io/" --cacheDir /tmp/hugo_cache`.
+- CI-style build: `hugo build --gc --minify --baseURL "https://opeshm.net/" --cacheDir /tmp/hugo_cache`.
 - GitHub Pages builds on pushes to `master` with Hugo Extended `0.160.0`, Dart Sass `1.99.0`, Node `24.14.1`, `TZ=Europe/Madrid`, and recursive submodules.
 - There is no root `package.json`; do not run root `npm install`. Node manifests and lockfiles under `themes/blowfish/` belong to the upstream theme.
 
 ## Customization
-- Site parameters, author metadata, language title, and menus live in `config/_default/*.toml`.
+- Site parameters, author metadata, language title, and menus live in `config/_default/*.toml`, split by language where applicable.
 - The homepage uses Blowfish `homepage.layout = "custom"`; edit `layouts/partials/home/custom.html`, `assets/css/custom.css`, and `i18n/*.yaml` for hero text/styling.
 - The active color scheme is `opes`, selected in `config/_default/params.toml` and defined in `assets/css/schemes/opes.css`.
 - Static assets are served from `static/`; content/template paths use root-relative URLs such as `/img/tuxavatar.png`.
